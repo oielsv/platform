@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 
-import { inter } from '@/lib/fonts';
+import { roboto } from '@/lib/fonts';
 
 import { routing } from '@/i18n/routing';
 
@@ -27,7 +27,7 @@ export default async function LocaleLayout({
       <head>
         <link rel="icon" type="image/png" sizes="256x256" href="/favicon.ico" />
       </head>
-      <body className={`${inter.variable} antialiased bg-background`}>
+      <body className={`${roboto.className} antialiased bg-background`}>
         <NextIntlClientProvider>
           <div className="min-h-screen">{children}</div>
         </NextIntlClientProvider>

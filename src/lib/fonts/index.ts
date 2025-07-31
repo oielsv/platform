@@ -1,6 +1,7 @@
-import { Inter } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 
-export const inter = Inter({
-  variable: '--font-inter',
+export const roboto = Roboto({
+  variable: '--font-roboto',
+  weight: ['400', '700'],
   subsets: ['latin'],
 });
