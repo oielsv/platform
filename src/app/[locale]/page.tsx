@@ -4,7 +4,10 @@ import { seoBuilder, getOrigin } from '@/lib/helpers';
 
 import { Link } from '@/i18n/navigation';
 
+import { Button } from '@/components/ui/button';
+
 import { LocaleSwitcher } from '@/components/LocaleSwitcher';
+import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 
 import type { Metadata } from 'next';
 
@@ -18,6 +21,18 @@ export default function HomePage() {
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight text-balance">{t('title')}</h1>
       <Link href="/about">{t('about')}</Link>
       <LocaleSwitcher />
+
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Theme Switcher</h2>
+        <ThemeSwitcher />
+      </div>
+
+      <div className="space-y-4">
+        <Button>Primary Button</Button>
+        <Button variant="secondary">Secondary Button</Button>
+        <Button variant="outline">Outline Button</Button>
+        <Button variant="destructive">Destructive Button</Button>
+      </div>
     </div>
   );
 }
