@@ -3,7 +3,10 @@
     "title": "Hello world!",
     "about": "Go to the about page"
   },
-  "Metadata": {
-    "title": "Licensed bookmaker and online casino VBET Ukraine ✌"
+  "metadata": {
+    "title": "Licensed bookmaker and online casino VBET Ukraine ✌",
+    "description": "Play with legal online casino and make bets online with VBET!",
+    "openGraphTitle": "Licensed bookmaker and online casino VBET Ukraine ✌",
+    "openGraphDescription": "Play with legal online casino and make bets online with VBET!"
   }
 }

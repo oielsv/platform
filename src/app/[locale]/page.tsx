@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+
+import { seoBuilder, getOrigin } from '@/lib/helpers';
 
 import { Link } from '@/i18n/navigation';
 
@@ -23,9 +24,11 @@ export default function HomePage() {
 
 export async function generateMetadata({ params }: { params: PageParamsProps }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Metadata' });
+  const { origin } = await getOrigin();
+
+  const [meta] = await Promise.all([seoBuilder.defineMetadata({ locale, origin })]);
 
   return {
-    title: t('title'),
+    ...meta,
   };
 }
