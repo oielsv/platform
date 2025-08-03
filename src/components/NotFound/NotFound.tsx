@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 
 import { Button } from '@/components/ui/button';
 
-export function NotFoundPage() {
+export function NotFound() {
   const t = useTranslations('notFound');
 
   return (
