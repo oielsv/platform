@@ -8,5 +8,9 @@
     "description": "Play with legal online casino and make bets online with VBET!",
     "openGraphTitle": "Licensed bookmaker and online casino VBET Ukraine ✌",
     "openGraphDescription": "Play with legal online casino and make bets online with VBET!"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "btn": "Go to homepage"
   }
 }
