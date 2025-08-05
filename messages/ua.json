@@ -12,5 +12,16 @@
   "notFound": {
     "title": "Сторінка не знайдена",
     "btn": "На головну"
+  },
+  "footer": {
+    "products": {
+      "title": "Продукти"
+    },
+    "help": {
+      "title": "Допомога"
+    },
+    "payments": {
+      "title": "PAYMENTS"
+    }
   }
 }

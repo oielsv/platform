@@ -6,6 +6,14 @@ const nextConfig: NextConfig = {
   /* config options here */
   poweredByHeader: false,
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cmsbetconstruct.com',
+      },
+    ],
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();

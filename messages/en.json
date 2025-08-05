@@ -12,5 +12,16 @@
   "notFound": {
     "title": "Page not found",
     "btn": "Go to homepage"
+  },
+  "footer": {
+    "products": {
+      "title": "Products"
+    },
+    "help": {
+      "title": "Help"
+    },
+    "payments": {
+      "title": "PAYMENTS"
+    }
   }
 }
